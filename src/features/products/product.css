@@ -100,7 +100,7 @@
     color: Grey;
   }
   
-  .description, label, button, input {
+  .description, label, button {
     float: left;
     clear: left;
     width: 100%;
@@ -109,10 +109,6 @@
     font-size: 1em;
     text-align: center;
     margin: 0.2em auto;
-  }
-  
-  input:focus {
-    outline-color: #fdf;
   }
   
   label {

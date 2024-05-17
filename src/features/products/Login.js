@@ -26,17 +26,17 @@ const Login  = () => {
 
         onSubmit: (values) => {
             try{
-                // console.log(values);
+                console.log(values);
                 console.log(ENDPOINT);
                 axios.post(`${ENDPOINT}/auth/login`,{
-                    email: values.username,
+                    username: values.email,
                     password: values.password,
                 }).then(res => {
                     // console.log(res);
                     if (res?.status == 200 && res?.data?.token) {
                         localStorage.setItem('token', res?.data?.token)
                         localStorage.setItem('userData', JSON.stringify(res?.data))
-                        navigate("/user/dashboard")
+                        navigate("/")
                     }
                 }).catch(err => {
                     console.log(err);

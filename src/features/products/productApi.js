@@ -1,5 +1,5 @@
 import axios from "axios";
-import { ENDPOINT } from "../../config";
+import { ENDPOINT } from "../../config/index";
 
 export function getProductsApi(){
      return  axios.get(`${ENDPOINT}/products`)

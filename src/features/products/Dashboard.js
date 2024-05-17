@@ -4,7 +4,7 @@ const Dashboard = () => {
     const navigate = useNavigate()
     const handelLogout = () => {
         localStorage.clear()
-        navigate("/Login")
+        navigate("/")
     }
     return(
         <div>
